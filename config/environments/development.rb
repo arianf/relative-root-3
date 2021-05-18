@@ -22,6 +22,8 @@ RelativeRoot3::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
+  config.relative_url_root = '/sub'
+  config.action_controller.relative_url_root = '/sub'
 
   # Do not compress assets
   config.assets.compress = false
